@@ -5,6 +5,11 @@ def column(str_1,str_2,F):
     else:
         num_1 = str_2
         num_2 = str_1
+    if len(num_1) == 1 and len(num_2) == 1 and int(num_1[0]) == 0:
+        return num_2
+    else:
+        return num_1
+        
         
     for i in range(len(num_1)-1,len(num_1)-len(num_2)-1,-1):
         for j in range(len(num_2)-1,-1,-1):
