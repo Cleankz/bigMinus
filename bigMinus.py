@@ -26,7 +26,7 @@ def column(str_1,str_2,F):
                 break
             elif int(num_1[i]) < int(num_2[j]) and int(num_1[i-1]) > 0:
                 num = (int(num_1[i]) + 10) - int(num_2[j])
-                num_1[i-1] =int(num_1[i-1]) - 1
+                num_1[i-1] =str(int(num_1[i-1]) - 1)
                 num_1[i] = str(num)
                 del num_2[j]
                 break
