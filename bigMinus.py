@@ -53,11 +53,11 @@ def BigMinus(s1, s2):
     n_1 = list(s1)
     n_2 = list(s2)
     result_list = []
+    if s1 is s2:
+        return '0'
     if len(n_1) > len(n_2):
         result = ''.join(column(n_1,n_2,True))
         return result
     else:
         result = ''.join(column(n_1,n_2,False))
         return result
-        
-        
