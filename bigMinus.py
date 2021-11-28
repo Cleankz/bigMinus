@@ -7,7 +7,9 @@ def column(str_1,str_2,F):
         num_2 = str_1
     if len(num_1) == 1 and len(num_2) == 1 and int(num_1[0]) == 0:
         return num_2
-    else:
+    elif len(num_1) == 1 and len(num_2) == 1 and int(num_2[0]) == 0:
+        return num_1
+    elif len(num_1) == 1 and len(num_2) == 1 and int(num_2[0]) == 0 and int(num_1[0]) == 0:
         return num_1
         
         
@@ -57,3 +59,5 @@ def BigMinus(s1, s2):
     else:
         result = ''.join(column(n_1,n_2,False))
         return result
+        
+        
